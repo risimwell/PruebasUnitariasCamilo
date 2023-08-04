@@ -1,0 +1,17 @@
+<h2>Crear Persona</h2>
+
+<form (submit)="createPerson()">
+<label for="firstname">Nombre:</label>
+<input type="text" id="firstname" name="firstname" [(ngModel)]="personData.firstname" required>
+
+<label for="lastname">Apellido:</label>
+<input type="text" id="lastname" name="lastname" [(ngModel)]="personData.lastname" required>
+
+<label for="username">Usuario:</label>
+<input type="text" id="username" name="username" [(ngModel)]="personData.username" required>
+
+<label for="password">Contraseña:</label>
+<input type="password" id="password" name="password" [(ngModel)]="personData.password" required>
+
+<button type="submit">Register</button>
+</form>

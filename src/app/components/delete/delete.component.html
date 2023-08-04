@@ -1,0 +1,9 @@
+<h2>Eliminar elementos</h2>
+<p>Seleccione el elemento que desea eliminar:</p>
+
+<select [(ngModel)]="selectedUsername">
+  <option value="" disabled>Seleccione un elemento</option>
+  <option *ngFor="let item of items" [value]="item.username">{{ item.username }}</option>
+</select>
+
+<button (click)="deleteItem()">Eliminar</button>
